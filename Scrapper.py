@@ -5,7 +5,7 @@ URL='https://www.amazon.in/BLACK-DECKER-CD121K50-Cordless-Accessories/dp/B00R4R1
 
 header={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36" }
 
-page=request.get(URL,header=header)
+page=requests.get(URL,header=header)
 
 soup=BeautifulSoup(page.content,'html.parser')
 print(soup.prettify())
